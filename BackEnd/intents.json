@@ -1,0 +1,971 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "tourist_info",
+      "patterns": [
+        "What are the popular tourist attractions?",
+        "Can you recommend places to visit?",
+        "Tell me about local landmarks.",
+        "Where can I find tourist information?"
+      ],
+      "responses": [
+        "Some popular tourist attractions include [list of attractions].",
+        "Sure! Here are some recommended places to visit: [list of places].",
+        "Local landmarks include [list of landmarks].",
+        "You can find tourist information at the local tourist information center or on our website."
+      ]
+    },
+    {
+      "tag": "transportation",
+      "patterns": [
+        "How can I get around the city?",
+        "Are there public transportation options?",
+        "What is the best way to travel within the city?"
+      ],
+      "responses": [
+        "The city has a reliable public transportation system including buses and trains.",
+        "You can use public transportation such as buses and trains to get around the city.",
+        "We recommend using public transportation as it is convenient and cost-effective."
+      ]
+    },
+    {
+      "tag": "accommodation",
+      "patterns": [
+        "Can you recommend hotels in the area?",
+        "Where can I find good accommodation?",
+        "What are some popular hotels?"
+      ],
+      "responses": [
+        "Here are some popular hotels in the area: [list of hotels].",
+        "We recommend checking online travel websites for a wide range of accommodation options.",
+        "You can find good accommodation options in the city center as well as near tourist attractions."
+      ]
+    },
+    {
+      "tag": "local_cuisine",
+      "patterns": [
+        "What are some local dishes?",
+        "Can you recommend local restaurants?",
+        "Where can I try local cuisine?"
+      ],
+      "responses": [
+        "Some popular local dishes include [list of dishes].",
+        "Here are some recommended local restaurants: [list of restaurants].",
+        "You can try local cuisine at restaurants in the city center or in specific neighborhoods known for their culinary scene."
+      ]
+    },
+    {
+      "tag": "sightseeing_tours",
+      "patterns": [
+        "Are there any sightseeing tours available?",
+        "Can I join a guided tour?",
+        "What are some popular sightseeing options?"
+      ],
+      "responses": [
+        "Yes, there are sightseeing tours available. You can choose from bus tours, walking tours, or boat tours.",
+        "You can join a guided tour to explore popular attractions and learn about the city's history.",
+        "Some popular sightseeing options include [list of options]."
+      ]
+    },
+    {
+      "tag": "language",
+      "patterns": [
+        "Do people speak English in this city?",
+        "Is English widely understood?",
+        "Will I face language barriers?"
+      ],
+      "responses": [
+        "English is commonly spoken in this city, especially in tourist areas.",
+        "Many locals understand and speak English, so you won't face significant language barriers.",
+        "While the official language is [local language], you can easily communicate in English with most people."
+      ]
+    },
+       {
+      "tag": "tourist_info 2",
+      "patterns": [
+        "What is the best time to visit?",
+        "Are there any guided tours available?",
+        "Tell me about the local culture.",
+        "Where can I find maps of the city?"
+      ],
+      "responses": [
+        "The best time to visit is during [season/month] when the weather is [description].",
+        "Yes, there are guided tours available. You can choose from walking tours, bike tours, or specialized tours.",
+        "The local culture is rich in [traditions/customs]. Don't miss the [local festival] if you're here during that time.",
+        "You can find maps of the city at the tourist information center or download them from our website."
+      ]
+    },
+    {
+      "tag": "transportation 2",
+      "patterns": [
+        "How much does public transportation cost?",
+        "Are there any transportation passes available?",
+        "What are the taxi services in the city?"
+      ],
+      "responses": [
+        "Public transportation fares vary based on distance. You can purchase single-ride tickets or day passes.",
+        "Yes, there are transportation passes available for unlimited travel within a certain period. They offer great value.",
+        "There are several taxi services available in the city, including [taxi company names]."
+      ]
+    },
+    {
+      "tag": "accommodation 2",
+      "patterns": [
+        "Are there any budget-friendly hotels?",
+        "Can you recommend luxury accommodations?",
+        "Are there any bed and breakfast options?"
+      ],
+      "responses": [
+        "Yes, there are budget-friendly hotels available. You can consider [list of budget-friendly hotels].",
+        "If you're looking for luxury accommodations, we recommend [list of luxury hotels].",
+        "Yes, there are bed and breakfast options available. Some popular ones include [list of bed and breakfast establishments]."
+      ]
+    },
+    {
+      "tag": "local_cuisine 2",
+      "patterns": [
+        "Where can I try traditional dishes?",
+        "Are there any vegetarian restaurants?",
+        "Can you recommend local street food?"
+      ],
+      "responses": [
+        "You can try traditional dishes at [list of restaurants] which specialize in local cuisine.",
+        "Yes, there are vegetarian restaurants available. Some popular ones include [list of vegetarian restaurants].",
+        "If you're looking for local street food, we recommend trying [list of popular street food options]."
+      ]
+    },
+    {
+      "tag": "sightseeing_tours 2",
+      "patterns": [
+        "Can you recommend a day trip from the city?",
+        "Are there any specialized tours available?",
+        "Tell me about the famous landmarks."
+      ],
+      "responses": [
+        "A popular day trip from the city is to [destination]. It offers [attractions] and is easily accessible by [mode of transportation].",
+        "Yes, there are specialized tours available, such as [list of specialized tours]. They cater to specific interests and provide in-depth experiences.",
+        "The famous landmarks in the city include [list of famous landmarks]. They are must-visit attractions that showcase the city's history and culture."
+      ]
+    },
+    {
+      "tag": "language 2",
+      "patterns": [
+        "Can you recommend any language translation apps?",
+        "Are there any language learning resources available?",
+        "Tell me some basic local phrases."
+      ],
+      "responses": [
+        "There are several language translation apps available, such as [list of translation apps]. They can help you communicate more easily.",
+        "Yes, there are language learning resources available. You can check out [list of language learning resources].",
+        "Here are some basic local phrases: [list of basic local phrases]. Learning a few phrases will enhance your interactions with the locals."
+      ]
+    },
+    {
+      "tag": "tourist_info 3",
+      "patterns": [
+        "Are there any local festivals happening?",
+        "Tell me about the historical sites in the city.",
+        "Can you recommend any scenic spots?",
+        "Where can I find souvenirs?"
+      ],
+      "responses": [
+        "Yes, there is a local festival called [festival name] happening on [date]. It's a vibrant celebration of [description].",
+        "The city is home to several historical sites, including [list of historical sites]. They offer a glimpse into the city's rich history.",
+        "If you're looking for scenic spots, we recommend visiting [list of scenic spots]. They offer breathtaking views of the city and surrounding areas.",
+        "You can find souvenirs at the local markets such as [market name] or at souvenir shops located in popular tourist areas."
+      ]
+    },
+    {
+      "tag": "transportation 3",
+      "patterns": [
+        "Is it easy to rent a car in the city?",
+        "Are there any bike rental services available?",
+        "Can you recommend any transportation apps?"
+      ],
+      "responses": [
+        "Yes, it is relatively easy to rent a car in the city. There are several car rental companies available.",
+        "If you prefer biking, there are bike rental services available. You can rent bikes for a few hours or for the whole day.",
+        "Some popular transportation apps in the city include [list of transportation apps]. They provide real-time information on public transportation and other travel options."
+      ]
+    },
+    {
+      "tag": "accommodation 3",
+      "patterns": [
+        "Are there any pet-friendly accommodations?",
+        "Can you recommend any unique accommodations?",
+        "Are there any hostels in the city?"
+      ],
+      "responses": [
+        "Yes, there are pet-friendly accommodations available. Some hotels and guesthouses allow pets with certain restrictions.",
+        "If you're looking for unique accommodations, consider [list of unique accommodations]. They offer a one-of-a-kind experience.",
+        "Yes, there are hostels in the city that provide budget-friendly accommodation options. Some popular hostels include [list of hostels]."
+      ]
+    },
+    {
+      "tag": "local_cuisine 3",
+      "patterns": [
+        "Are there any food markets in the city?",
+        "Can you recommend any Michelin-starred restaurants?",
+        "Tell me about the local dessert specialties."
+      ],
+      "responses": [
+        "Yes, there are food markets in the city where you can explore a wide range of local produce and delicacies. Some popular markets include [list of food markets].",
+        "If you're looking for Michelin-starred restaurants, consider [list of Michelin-starred restaurants]. They offer exceptional dining experiences.",
+        "The local dessert specialties include [list of local dessert specialties]. They are a must-try for anyone with a sweet tooth."
+      ]
+    },
+    {
+      "tag": "sightseeing_tours 3",
+      "patterns": [
+        "Can I take a boat tour?",
+        "Tell me about the city's architecture.",
+        "Are there any art galleries in the city?"
+      ],
+      "responses": [
+        "Yes, you can take a boat tour to explore the city from a different perspective. It's a relaxing and scenic experience.",
+        "The city is known for its diverse architecture, ranging from modern skyscrapers to historic buildings with intricate designs.",
+        "There are several art galleries in the city that showcase a wide range of artworks. Some popular art galleries include [list of art galleries]."
+      ]
+    },
+    {
+      "tag": "language 3",
+      "patterns": [
+        "Can you recommend a local language guidebook?",
+        "Are there any language exchange programs available?",
+        "Tell me about the local dialect."
+      ],
+      "responses": [
+        "Yes, there are local language guidebooks available that can help you learn basic phrases and navigate daily conversations.",
+        "If you're interested in language exchange, there are language exchange programs where you can practice the local language with native speakers.",
+        "The local dialect is [description]. While most people speak the standard language, you might come across some locals who use the dialect in informal settings."
+      ]
+    },
+
+
+
+    {
+      "tag": "fes_festivals",
+      "patterns": [
+        "What are the popular festivals in fes?",
+        "Tell me about the festivals in fes.",
+        "Which festivals can I attend in fes?"
+      ],
+      "responses": [
+        "Some popular festivals in fes include [list of popular festivals]. They showcase the cultural richness of the city."
+      ]
+    },
+    {
+      "tag": "fes_historical_sites",
+      "patterns": [
+        "Tell me about the historical sites in fes.",
+        "What are the famous historical sites in fes?",
+        "Can you recommend any historical sites to visit in fes?"
+      ],
+      "responses": [
+        "fes is known for its historical sites, such as the [list of historical sites]. These sites offer a glimpse into the city's fascinating past."
+      ]
+    },
+    {
+      "tag": "fes_markets",
+      "patterns": [
+        "Can you recommend any traditional markets in fes?",
+        "Where can I go shopping for traditional items in fes?",
+        "Tell me about the popular markets in fes."
+      ],
+      "responses": [
+        "If you're looking for traditional markets in fes, the most famous one is the Medina of fes. It's a UNESCO World Heritage site and a vibrant hub for shopping."
+      ]
+    },
+    {
+      "tag": "fes_handicrafts",
+      "patterns": [
+        "Where can I buy authentic Moroccan handicrafts in fes?",
+        "Tell me about the handicrafts market in fes.",
+        "Can you recommend any shops for Moroccan handicrafts in fes?"
+      ],
+      "responses": [
+        "You can buy authentic Moroccan handicrafts in fes at the various souks (markets) within the Medina. They offer a wide range of traditional products."
+      ]
+    },
+    {
+      "tag": "fes_taxis",
+      "patterns": [
+        "Are there taxis available in fes?",
+        "Can I easily find a taxi in fes?",
+        "How can I get around fes using taxis?"
+      ],
+      "responses": [
+        "Yes, there are taxis available in fes. You can easily find them throughout the city for convenient transportation."
+      ]
+    },
+    {
+      "tag": "fes_car_rental",
+      "patterns": [
+        "Can you recommend any car rental companies in fes?",
+        "Where can I rent a car in fes?",
+        "Tell me about car rental services in fes."
+      ],
+      "responses": [
+        "If you're looking to rent a car in fes, some popular car rental companies include [list of car rental companies]."
+      ]
+    },
+    {
+      "tag": "fes_train_station",
+      "patterns": [
+        "Is there a train station in fes?",
+        "How can I travel to fes by train?",
+        "Tell me about the train services in fes."
+      ],
+      "responses": [
+        "Yes, fes has a train station. It provides connections to other cities in Morocco and can be a convenient mode of transportation."
+      ]
+    },
+    {
+      "tag": "fes_riads",
+      "patterns": [
+        "Can you recommend any riads in fes?",
+        "Where can I stay in a riad in fes?",
+        "Tell me about the traditional riads in fes."
+      ],
+      "responses": [
+        "fes is known for its beautiful riads, traditional Moroccan houses converted into guesthouses. Some recommended riads in fes are [list of riads]."
+      ]
+    },
+    {
+      "tag": "fes_luxury_hotels",
+      "patterns": [
+        "Are there any luxury hotels in fes?",
+        "Can you recommend luxury accommodations in fes?",
+        "Tell me about the high-end hotels in fes."
+      ],
+      "responses": [
+        "For luxury accommodation in fes, you can consider [list of luxury hotels]. They offer high-end amenities and services."
+      ]
+    },
+    {
+      "tag": "fes_budget_hotels",
+      "patterns": [
+        "Tell me about budget accommodations in fes.",
+        "Can you recommend affordable hotels in fes?",
+        "Where can I find budget-friendly accommodations in fes?"
+      ],
+      "responses": [
+        "If you're looking for budget accommodations in fes, there are several guesthouses and budget-friendly hotels available. Some options include [list of budget accommodations]."
+      ]
+    },
+    {
+      "tag": "fes_must_try_dishes",
+      "patterns": [
+        "What are the must-try dishes in fes?",
+        "Can you recommend any traditional Moroccan dishes in fes?",
+        "Tell me about the local cuisine in fes."
+      ],
+      "responses": [
+        "Some must-try dishes in fes include [list of must-try dishes]. They are a delicious reflection of the city's culinary heritage."
+      ]
+    },
+    {
+      "tag": "fes_vegetarian_restaurants",
+      "patterns": [
+        "Can you recommend any vegetarian restaurants in fes?",
+        "Where can I find vegetarian options in fes?",
+        "Tell me about the vegetarian food scene in fes."
+      ],
+      "responses": [
+        "If you're looking for vegetarian restaurants in fes, some options to consider are [list of vegetarian restaurants]. They offer a variety of vegetarian dishes."
+      ]
+    },
+    {
+      "tag": "fes_mint_tea",
+      "patterns": [
+        "Tell me about the traditional mint tea in fes.",
+        "What is Moroccan mint tea?",
+        "Can you explain how to prepare mint tea in fes?"
+      ],
+      "responses": [
+        "Traditional Moroccan mint tea, also known as 'atai,' is a popular drink in fes and Morocco. It is a combination of green tea, fresh mint leaves, and sugar, served in small glasses."
+      ]
+    },
+     {
+      "tag": "fes_cultural_events",
+      "patterns": [
+        "Are there any cultural events happening in fes?",
+        "Tell me about cultural festivals in fes.",
+        "What cultural activities can I experience in fes?"
+      ],
+      "responses": [
+        "fes is known for its vibrant cultural scene. Throughout the year, you can enjoy various cultural events, such as [list of cultural events]. These events celebrate the rich heritage of the city."
+      ]
+    },
+    {
+      "tag": "fes_architecture",
+      "patterns": [
+        "What is the architectural style of fes?",
+        "Tell me about the unique architecture in fes.",
+        "Can you recommend any notable buildings in fes?"
+      ],
+      "responses": [
+        "The architecture of fes is renowned for its intricate designs and traditional Moroccan elements. Some notable buildings in fes include [list of notable buildings]. They showcase the city's architectural beauty."
+      ]
+    },
+    {
+      "tag": "fes_local_customs",
+      "patterns": [
+        "What are some local customs and traditions in fes?",
+        "Tell me about the cultural etiquette in fes.",
+        "Can you share any interesting customs followed in fes?"
+      ],
+      "responses": [
+        "fes has its own set of customs and traditions. Some common customs include [list of local customs]. It's important to respect these customs while visiting the city."
+      ]
+    },
+    {
+      "tag": "fes_day_trips",
+      "patterns": [
+        "Are there any popular day trips from fes?",
+        "Tell me about nearby attractions from fes.",
+        " anglais?"
+      ],
+      "responses": [
+        "fes serves as a gateway to various fascinating destinations nearby. Some popular day trips from fes include [list of day trips]. These trips allow you to explore the region's natural beauty and historical sites."
+      ]
+    },
+    {
+      "tag": "fes_language",
+      "patterns": [
+        "What language is spoken in fes?",
+        "Can I get by with English in fes?",
+        "Tell me about the local language in fes."
+      ],
+      "responses": [
+        "The official language of fes and Morocco is Arabic. However, many locals also speak French, and English is spoken to some extent in tourist areas. It can be helpful to learn a few basic Arabic phrases before your visit."
+      ]
+    },
+    {
+      "tag": "fes_weather",
+      "patterns": [
+        "What is the weather like in fes?",
+        "Tell me about the climate in fes.",
+        "Can you provide information about the seasonal weather in fes?"
+      ],
+      "responses": [
+        "fes experiences a Mediterranean climate, characterized by hot summers and mild winters. Summer temperatures can reach [temperature range], while winter temperatures average around [temperature range]. It's best to check the weather forecast before your trip."
+      ]
+    },
+    {
+      "tag": "marrakech_attractions",
+      "patterns": [
+        "What are the popular attractions in Marrakech?",
+        "Tell me about the must-visit places in Marrakech.",
+        "Which attractions should I see in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech is home to many popular attractions, including [list of popular attractions]. These places offer a unique cultural and historical experience."
+      ]
+    },
+    {
+      "tag": "marrakech_souks",
+      "patterns": [
+        "Can you recommend any traditional souks in Marrakech?",
+        "Where can I go shopping for traditional items in Marrakech?",
+        "Tell me about the famous markets in Marrakech."
+      ],
+      "responses": [
+        "If you're looking for traditional souks in Marrakech, the most famous one is the Medina. It's a bustling market where you can find a wide range of traditional products."
+      ]
+    },
+    {
+      "tag": "marrakech_gardens",
+      "patterns": [
+        "Tell me about the beautiful gardens in Marrakech.",
+        "What are the famous gardens to visit in Marrakech?",
+        "Can you recommend any green spaces in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech is known for its stunning gardens, such as [list of famous gardens]. These gardens provide a peaceful oasis amidst the bustling city."
+      ]
+    },
+    {
+      "tag": "marrakech_mosques",
+      "patterns": [
+        "Can you recommend any mosques to visit in Marrakech?",
+        "Tell me about the famous mosques in Marrakech.",
+        "Where can I experience the local religious culture in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech has several beautiful mosques worth visiting, including [list of famous mosques]. They showcase the city's religious and architectural heritage."
+      ]
+    },
+    {
+      "tag": "marrakech_food",
+      "patterns": [
+        "What are the traditional dishes in Marrakech?",
+        "Can you recommend any Moroccan restaurants in Marrakech?",
+        "Tell me about the local cuisine in Marrakech."
+      ],
+      "responses": [
+        "Marrakech offers a rich culinary experience with its traditional dishes. Some must-try dishes include [list of traditional dishes]. You can find them in various local restaurants and food stalls."
+      ]
+    },
+    {
+      "tag": "marrakech_nightlife",
+      "patterns": [
+        "What is the nightlife like in Marrakech?",
+        "Tell me about the popular nightlife spots in Marrakech.",
+        "Where can I go for entertainment in the evening in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech has a vibrant nightlife scene with a range of options for entertainment. Some popular nightlife spots include [list of popular nightlife spots]."
+      ]
+    },
+    {
+      "tag": "marrakech_day_trips",
+      "patterns": [
+        "Are there any popular day trips from Marrakech?",
+        "Tell me about nearby attractions from Marrakech.",
+        "Can you recommend any day tours from Marrakech?"
+      ],
+      "responses": [
+        "Marrakech serves as a base for many exciting day trips. Some popular options include [list of day trips]. These trips allow you to explore the natural beauty and cultural sites around Marrakech."
+      ]
+    },
+  {
+      "tag": "marrakech_accommodation",
+      "patterns": [
+        "Can you recommend hotels in Marrakech?",
+        "Tell me about the accommodations in Marrakech.",
+        "Where should I stay in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech offers a wide range of accommodations to suit different preferences and budgets. Some recommended hotels in Marrakech are [list of recommended hotels]. They provide comfortable stays with excellent amenities."
+      ]
+    },
+    {
+      "tag": "marrakech_festivals",
+      "patterns": [
+        "Are there any festivals happening in Marrakech?",
+        "Tell me about the cultural festivals in Marrakech.",
+        "What are the popular events in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech hosts various cultural festivals and events throughout the year. Some popular festivals include [list of festivals]. These events showcase the vibrant arts and traditions of the city."
+      ]
+    },
+    {
+      "tag": "marrakech_transportation",
+      "patterns": [
+        "How can I get around Marrakech?",
+        "Tell me about transportation options in Marrakech.",
+        "Are there taxis available in Marrakech?"
+      ],
+      "responses": [
+        "In Marrakech, you can use various transportation options to get around, including taxis, buses, and horse-drawn carriages called calèches. Taxis are readily available and can be hailed on the street or booked through ride-hailing apps."
+      ]
+    },
+    {
+      "tag": "marrakech_spa",
+      "patterns": [
+        "Can you recommend any spas in Marrakech?",
+        "Tell me about the spa and wellness options in Marrakech.",
+        "Where can I relax and rejuvenate in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech is renowned for its spa and wellness offerings. Some recommended spas in Marrakech are [list of recommended spas]. They offer a range of treatments and relaxation experiences."
+      ]
+    },
+    {
+      "tag": "marrakech_historical_sites",
+      "patterns": [
+        "Tell me about the historical sites in Marrakech.",
+        "What are the famous historical landmarks in Marrakech?",
+        "Can you recommend any historical places to visit in Marrakech?"
+      ],
+      "responses": [
+        "Marrakech is rich in historical sites and landmarks. Some famous historical places to visit in Marrakech include [list of historical sites]. They provide a glimpse into the city's rich history and architectural heritage."
+      ]
+    },
+    {
+      "tag": "marrakech_art_crafts",
+      "patterns": [
+        "Can you recommend any art and craft shops in Marrakech?",
+        "Where can I buy traditional Moroccan crafts in Marrakech?",
+        "Tell me about the local art scene in Marrakech."
+      ],
+      "responses": [
+        "Marrakech is known for its vibrant art and craft scene. You can find traditional Moroccan crafts in shops and markets such as [list of art and craft shops]. These crafts make for unique souvenirs."
+      ]
+    },
+     {
+      "tag": "tanger_attractions",
+      "patterns": [
+        "What are the popular attractions in Tanger?",
+        "Tell me about the must-visit places in Tanger.",
+        "Which attractions should I see in Tanger?"
+      ],
+      "responses": [
+        "Tanger is home to many popular attractions, including [list of popular attractions]. These places offer a unique cultural and historical experience."
+      ]
+    },
+    {
+      "tag": "tanger_beaches",
+      "patterns": [
+        "Can you recommend any beaches in Tanger?",
+        "Where can I go for a beach day in Tanger?",
+        "Tell me about the beautiful beaches in Tanger."
+      ],
+      "responses": [
+        "Tanger is blessed with beautiful beaches, such as [list of popular beaches]. These beaches offer opportunities for relaxation and water activities."
+      ]
+    },
+    {
+      "tag": "tanger_medina",
+      "patterns": [
+        "Tell me about the Medina in Tanger.",
+        "What can I explore in the Medina of Tanger?",
+        "Can you recommend any historical sites in the Medina?"
+      ],
+      "responses": [
+        "The Medina of Tanger is a UNESCO World Heritage site and is known for its narrow streets, vibrant markets, and historical landmarks. Some popular sites to visit in the Medina include [list of historical sites]."
+      ]
+    },
+    {
+      "tag": "tanger_culture",
+      "patterns": [
+        "Tell me about the cultural scene in Tanger.",
+        "What are the cultural events in Tanger?",
+        "Can you recommend any art galleries or museums in Tanger?"
+      ],
+      "responses": [
+        "Tanger has a thriving cultural scene with various events and venues. Some recommended art galleries and museums in Tanger are [list of art galleries and museums]. These places showcase the rich cultural heritage of the city."
+      ]
+    },
+    {
+      "tag": "tanger_food",
+      "patterns": [
+        "What are the traditional dishes in Tanger?",
+        "Can you recommend any restaurants in Tanger?",
+        "Tell me about the local cuisine in Tanger."
+      ],
+      "responses": [
+        "Tanger offers a diverse culinary experience with its traditional dishes. Some must-try dishes include [list of traditional dishes]. You can find them in various local restaurants and food stalls."
+      ]
+    },
+    {
+      "tag": "tanger_nightlife",
+      "patterns": [
+        "What is the nightlife like in Tanger?",
+        "Tell me about the popular nightlife spots in Tanger.",
+        "Where can I go for entertainment in the evening in Tanger?"
+      ],
+      "responses": [
+        "Tanger has a vibrant nightlife scene with a range of options for entertainment. Some popular nightlife spots include [list of popular nightlife spots]."
+      ]
+    },
+    {
+      "tag": "tanger_day_trips",
+      "patterns": [
+        "Are there any popular day trips from Tanger?",
+        "Tell me about nearby attractions from Tanger.",
+        "Can you recommend any day tours from Tanger?"
+      ],
+      "responses": [
+        "Tanger serves as a base for many exciting day trips. Some popular options include [list of day trips]. These trips allow you to explore the natural beauty and cultural sites around Tanger."
+      ]
+    },
+     {
+      "tag": "tanger_accommodation",
+      "patterns": [
+        "Can you recommend hotels in Tanger?",
+        "Tell me about the accommodations in Tanger.",
+        "Where should I stay in Tanger?"
+      ],
+      "responses": [
+        "Tanger offers a wide range of accommodations to suit different preferences and budgets. Some recommended hotels in Tanger are [list of recommended hotels]. They provide comfortable stays with excellent amenities."
+      ]
+    },
+    {
+      "tag": "tanger_festivals",
+      "patterns": [
+        "Are there any festivals happening in Tanger?",
+        "Tell me about the cultural festivals in Tanger.",
+        "What are the popular events in Tanger?"
+      ],
+      "responses": [
+        "Tanger hosts various cultural festivals and events throughout the year. Some popular festivals include [list of festivals]. These events showcase the vibrant arts and traditions of the city."
+      ]
+    },
+    {
+      "tag": "tanger_transportation",
+      "patterns": [
+        "How can I get around Tanger?",
+        "Tell me about transportation options in Tanger.",
+        "Are there taxis available in Tanger?"
+      ],
+      "responses": [
+        "In Tanger, you can use various transportation options to get around, including taxis, buses, and trains. Taxis are readily available and can be hailed on the street or booked through ride-hailing apps."
+      ]
+    },
+    {
+      "tag": "tanger_spa",
+      "patterns": [
+        "Can you recommend any spas in Tanger?",
+        "Tell me about the spa and wellness options in Tanger.",
+        "Where can I relax and rejuvenate in Tanger?"
+      ],
+      "responses": [
+        "Tanger is renowned for its spa and wellness offerings. Some recommended spas in Tanger are [list of recommended spas]. They offer a range of treatments and relaxation experiences."
+      ]
+    },
+    {
+      "tag": "tanger_historical_sites",
+      "patterns": [
+        "Tell me about the historical sites in Tanger.",
+        "What are the famous historical landmarks in Tanger?",
+        "Can you recommend any historical places to visit in Tanger?"
+      ],
+      "responses": [
+        "Tanger is rich in historical sites and landmarks. Some famous historical places to visit in Tanger include [list of historical sites]. They provide a glimpse into the city's rich history and architectural heritage."
+      ]
+    },
+    {
+      "tag": "tanger_art_crafts",
+      "patterns": [
+        "Can you recommend any art and craft shops in Tanger?",
+        "Where can I buy traditional Moroccan crafts in Tanger?",
+        "Tell me about the local art scene in Tanger."
+      ],
+      "responses": [
+        "Tanger is known for its vibrant art and craft scene. You can find traditional Moroccan crafts in shops and markets such as [list of art and craft shops]. These crafts make for unique souvenirs."
+      ]
+    },
+     {
+      "tag": "casablanca_attractions",
+      "patterns": [
+        "What are the popular attractions in Casablanca?",
+        "Tell me about the must-visit places in Casablanca.",
+        "Which attractions should I see in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca is home to many popular attractions, including [list of popular attractions]. These places offer a unique blend of modern and traditional experiences."
+      ]
+    },
+    {
+      "tag": "casablanca_food",
+      "patterns": [
+        "What are the traditional dishes in Casablanca?",
+        "Can you recommend any Moroccan restaurants in Casablanca?",
+        "Tell me about the local cuisine in Casablanca."
+      ],
+      "responses": [
+        "Casablanca offers a diverse culinary scene with its traditional dishes. Some must-try dishes include [list of traditional dishes]. You can find them in various local restaurants and food stalls."
+      ]
+    },
+    {
+      "tag": "casablanca_shopping",
+      "patterns": [
+        "Can you recommend any shopping malls in Casablanca?",
+        "Where can I go shopping in Casablanca?",
+        "Tell me about the popular markets in Casablanca."
+      ],
+      "responses": [
+        "Casablanca has several shopping malls and markets where you can indulge in retail therapy. Some popular shopping destinations in Casablanca include [list of shopping malls and markets]."
+      ]
+    },
+    {
+      "tag": "casablanca_nightlife",
+      "patterns": [
+        "What is the nightlife like in Casablanca?",
+        "Tell me about the popular nightlife spots in Casablanca.",
+        "Where can I go for entertainment in the evening in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca boasts a vibrant nightlife scene with a wide range of options for entertainment. Some popular nightlife spots in Casablanca include [list of popular nightlife spots]."
+      ]
+    },
+    {
+      "tag": "casablanca_beaches",
+      "patterns": [
+        "Can you recommend any beaches in Casablanca?",
+        "Where can I go for a beach day in Casablanca?",
+        "Tell me about the beautiful beaches in Casablanca."
+      ],
+      "responses": [
+        "Casablanca is known for its beautiful beaches, such as [list of popular beaches]. These beaches offer opportunities for relaxation and water activities."
+      ]
+    },
+    {
+      "tag": "casablanca_architecture",
+      "patterns": [
+        "Tell me about the architectural landmarks in Casablanca.",
+        "What are the famous buildings in Casablanca?",
+        "Can you recommend any architectural wonders in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca is renowned for its architectural wonders. Some famous buildings and landmarks in Casablanca include [list of architectural landmarks]. They showcase a unique blend of art deco and Moroccan architectural styles."
+      ]
+    },
+    {
+      "tag": "casablanca_transportation",
+      "patterns": [
+        "How can I get around Casablanca?",
+        "Tell me about transportation options in Casablanca.",
+        "Are there taxis available in Casablanca?"
+      ],
+      "responses": [
+        "In Casablanca, you can use various transportation options to get around, including taxis, buses, and trains. Taxis are readily available and can be hailed on the street or booked through ride-hailing apps."
+      ]
+    },
+     {
+      "tag": "casablanca_hotels",
+      "patterns": [
+        "Can you recommend hotels in Casablanca?",
+        "Tell me about the accommodations in Casablanca.",
+        "Where should I stay in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca offers a wide range of accommodations to suit different preferences and budgets. Some recommended hotels in Casablanca are [list of recommended hotels]. They provide comfortable stays with excellent amenities."
+      ]
+    },
+    {
+      "tag": "casablanca_restaurants",
+      "patterns": [
+        "Can you recommend restaurants in Casablanca?",
+        "Tell me about the dining options in Casablanca.",
+        "Where can I find good food in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca is known for its diverse culinary scene. You can find a variety of restaurants offering Moroccan and international cuisines. Some recommended restaurants in Casablanca are [list of recommended restaurants]."
+      ]
+    },
+    {
+      "tag": "casablanca_shopping",
+      "patterns": [
+        "Where can I go shopping in Casablanca?",
+        "Tell me about the shopping malls in Casablanca.",
+        "Are there any markets in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca has several shopping destinations to satisfy your retail therapy needs. Some popular shopping malls in Casablanca include [list of shopping malls]. Additionally, you can explore the local markets like [list of local markets] for a unique shopping experience."
+      ]
+    },
+    {
+      "tag": "casablanca_landmarks",
+      "patterns": [
+        "Tell me about the famous landmarks in Casablanca.",
+        "What are the must-visit places in Casablanca?",
+        "Can you recommend any iconic sights in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca is home to several iconic landmarks that are worth visiting. Some famous landmarks in Casablanca include [list of famous landmarks]. These places showcase the city's history, culture, and architectural beauty."
+      ]
+    },
+    {
+      "tag": "casablanca_beaches",
+      "patterns": [
+        "Are there any beaches in Casablanca?",
+        "Tell me about the beaches in Casablanca.",
+        "Where can I go for a beach day in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca is blessed with beautiful beaches along its coastline. Some popular beaches in Casablanca include [list of popular beaches]. These beaches offer a relaxing and enjoyable experience by the sea."
+      ]
+    },
+    {
+      "tag": "casablanca_nightlife",
+      "patterns": [
+        "What is the nightlife like in Casablanca?",
+        "Tell me about the nightlife options in Casablanca.",
+        "Where can I go for entertainment in the evening in Casablanca?"
+      ],
+      "responses": [
+        "Casablanca has a vibrant nightlife scene with numerous options for entertainment. You can explore trendy bars, nightclubs, and live music venues in areas like [list of popular nightlife areas]."
+      ]
+    },
+    {
+      "tag": "geocoding",
+      "patterns": ["Find the address of {place}", "Where is {place} located?", "Can you give me the coordinates of {place}?"],
+      "responses": ["The address of {place} is {address}. The geographical coordinates are latitude: {latitude} and longitude: {longitude}."]
+    },
+
+  ]
+}
